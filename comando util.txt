@@ -1,2 +1,0 @@
-para compilar typescript :
-ir até a pasto prompt e executar => tsc 'app'
