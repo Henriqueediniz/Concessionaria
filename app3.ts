@@ -15,4 +15,4 @@ let concessionaria = new Concessionaria('',[]);
 
 console.log(carro);
 console.log(moto);
- console.log(concessionaria.fornecerHorarioDeFuncionamento())
+ console.log(concessionaria.fornecerHorariosDeFuncionamento())
