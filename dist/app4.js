@@ -1,22 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ConcessionariaDao_1 = require("./ConcessionariaDao");
+//import { ConcessionariaDao } from './ConcessionariaDao'
 var Concessionaria_1 = require("./Concessionaria");
-var PessoaDAO_1 = require("./PessoaDAO");
+//import { PessoaDAO } from './PessoaDAO'
 var Pessoa_1 = require("./Pessoa");
-var CarroDAO_1 = require("./CarroDAO");
+//import { CarroDao } from './CarroDAO'
 var Carro_1 = require("./Carro");
-var MotoDAO_1 = require("./MotoDAO");
+//import { MotoDao } from './MotoDAO'
 var Moto_1 = require("./Moto");
-var dao = new ConcessionariaDao_1.ConcessionariaDao();
+var Dao_1 = require("./Dao");
+//let dao: ConcessionariaDao = new ConcessionariaDao();
 var concessionaria = new Concessionaria_1.default('', []);
-dao.inserir(concessionaria);
-var dao2 = new PessoaDAO_1.PessoaDAO();
+//dao.inserir(concessionaria); 
+//let dao2: PessoaDAO = new PessoaDAO()
 var pessoa = new Pessoa_1.default('', '');
-dao2.atualizar(pessoa);
-var daoCarro = new CarroDAO_1.CarroDao();
+//dao2.atualizar(pessoa);
+//let daoCarro: CarroDao = new CarroDao()
 var carro = new Carro_1.default('', 4);
-daoCarro.selecionar(1);
-var daoMoto = new MotoDAO_1.MotoDao();
+//daoCarro.selecionar(1)
+//let daoMoto: MotoDao = new MotoDao()
 var moto = new Moto_1.default();
-daoMoto.remover(1);
+//daoMoto.remover(1)
+// * * * Call generic class * * * //
+var dao = new Dao_1.Dao();
+dao.atualizar(concessionaria);
